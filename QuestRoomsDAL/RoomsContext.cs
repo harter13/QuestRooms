@@ -17,7 +17,7 @@ namespace QuestRoomsDAL
         {
         }    
 
-        public DbSet<int> Ints { get; set; }
+
     }
 
     //public class MyEntity
