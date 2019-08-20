@@ -1,5 +1,6 @@
 namespace QuestRoomsDAL
 {
+    using QuestRoomsDAL.Models;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -16,8 +17,12 @@ namespace QuestRoomsDAL
             : base("name=RoomsContext")
         {
         }    
-
-
+        public DbSet <Room> rooms { get; set; }
+        public DbSet<Address> addresses { get; set; }
+        public DbSet<Country> countries { get; set; }
+        public DbSet<City> cities { get; set; }
+        public DbSet<Street> streets { get; set; }
+        public DbSet<Company> companies { get; set; }
     }
 
     //public class MyEntity

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\DbInitilizer.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Company.cs" />
