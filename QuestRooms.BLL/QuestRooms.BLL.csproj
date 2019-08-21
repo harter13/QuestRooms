@@ -41,7 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOModels\CityDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servises\Abstraction\ICitiesService.cs" />
+    <Compile Include="Servises\Implementation\CitiesServis.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuestRoomsDAL\QuestRooms.DAL.csproj">
+      <Project>{57BC5EF7-A368-4E59-8ACA-7DFE04ABDDEA}</Project>
+      <Name>QuestRooms.DAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
